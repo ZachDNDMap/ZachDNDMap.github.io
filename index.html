@@ -82,7 +82,7 @@
     
 	var states = [{
     "type": "Feature",
-    "properties": {"party": "Loyal", "name": "Elven Heartland"},
+    "properties": {"party": "Loyal", "name": "Elven Heartland", "influence": "Elves: 100%, Resistance: 0%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -103,7 +103,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Loyal", "name": "Kobolds"},
+    "properties": {"party": "Loyal", "name": "Kobolds", "influence": "Elves: 85%, Resistance: 15%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -133,7 +133,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Loyal", "name": "Dragonborn"},
+    "properties": {"party": "Loyal", "name": "Dragonborn", "influence": "Elves: 80%, Resistance: 20%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -162,7 +162,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Loyal", "name": "Arakocra"},
+    "properties": {"party": "Loyal", "name": "Arakocra", "influence": "Elves: 75%, Resistance: 25%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -205,7 +205,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Loyal", "name": "Goblins"},
+    "properties": {"party": "Loyal", "name": "Goblins", "influence": "Elves: 60%, Resistance: 40%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -243,7 +243,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Loyal", "name": "Bugbears"},
+    "properties": {"party": "Loyal", "name": "Bugbears", "influence": "Elves: 75%, Resistance: 25%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -274,7 +274,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Disloyal", "name": "Orcs"},
+    "properties": {"party": "Disloyal", "name": "Orcs", "influence": "Elves: 15%, Resistance: 85%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -312,7 +312,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Neutral", "name": "Gnomes"},
+    "properties": {"party": "Neutral", "name": "Gnomes", "influence": "Elves: 55%, Resistance: 45%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -343,7 +343,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Disloyal", "name": "Tieflings"},
+    "properties": {"party": "Disloyal", "name": "Tieflings", "influence": "Elves: 30%, Resistance: 70%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -389,7 +389,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Neutral", "name": "Centaurs"},
+    "properties": {"party": "Neutral", "name": "Centaurs", "influence": "Elves: 59%, Resistance: 41%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -441,7 +441,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Other", "name": "Ent Forest"},
+    "properties": {"party": "Other", "name": "Ent Forest", "influence": "Elves: 0%, Resistance: 0%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -455,7 +455,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Neutral", "name": "Fire Island"},
+    "properties": {"party": "Neutral", "name": "Fire Island", "influence": "Elves: 50%, Resistance: 50%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -471,7 +471,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Neutral", "name": "Kindom of Dwarves"},
+    "properties": {"party": "Neutral", "name": "Kindom of Dwarves", "influence": "Elves: 0%, Resistance: 30%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -511,7 +511,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Neutral", "name": "Halflings"},
+    "properties": {"party": "Neutral", "name": "Halflings", "influence": "Elves: 50%, Resistance: 50%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -548,7 +548,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Other", "name": "Hobgoblins"},
+    "properties": {"party": "Other", "name": "Hobgoblins", "influence": "Elves: 0%, Resistance: 0%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -585,7 +585,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Disloyal", "name": "Humans"},
+    "properties": {"party": "Disloyal", "name": "Humans", "influence": "Elves: 5%, Resistance: 95%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -625,7 +625,7 @@
         }
 		}	
 	, onEachFeature: function (feature, layer) {
-    layer.bindPopup(feature.properties.name + ' Status: ' + feature.properties.party);
+    layer.bindPopup(feature.properties.name + ' Status: ' + feature.properties.party + ' , ' + feature.properties.influence);
 	}})
 	group = new L.FeatureGroup();
 	group.addLayer(states2);
