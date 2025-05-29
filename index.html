@@ -625,7 +625,7 @@
         }
 		}	
 	, onEachFeature: function (feature, layer) {
-    layer.bindPopup(feature.properties.name + ' Status: ' + feature.properties.party + ' , ' + feature.properties.influence);
+    layer.bindPopup(feature.properties.name + '\n Status: ' + feature.properties.party + ' \n ' + feature.properties.influence);
 	}})
 	group = new L.FeatureGroup();
 	group.addLayer(states2);
