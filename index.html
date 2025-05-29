@@ -74,9 +74,11 @@
 	var w5 = L.marker([78.098296, 27.070313], ).bindPopup("Stronban's Pass").openPopup();
 	var w6 = L.marker([71.910888, -70.664063], ).bindPopup("Vronomdhold").openPopup();
 	var frank = L.marker([54.357884, 275.625], ).bindPopup("Frank").openPopup();
-	var marcus = L.marker([50.948674, 147.480469], ).bindPopup("Marcus").openPopup();
+	var marcus = L.marker([-78.518746, 119.53125], ).bindPopup("Marcus").openPopup();
+	var lillian = L.marker([50.948674, 147.480469], ).bindPopup("Lilian").openPopup();
+	var sam = L.marker([-8.404993, 67.675781], ).bindPopup("Sammy Wall").openPopup();
 	var province = L.layerGroup([gnome, tief, h1, h2, h3, h4, h5, e1, e2, e3, e4, t1, t2, t3, gn1, gn2, d1, d2, d3, b1, b2, o1, o2, a1, a2, a3, i1, g1, g2, l1, l2, l3, l4, c1, c2, k1, k2, k3, k4, w1, w2, w3, w4, w5, w6]);
-	var people = L.layerGroup([tree, frank, marcus]);
+	var people = L.layerGroup([tree, frank, marcus, lillian, sam]);
 	var debug = L.layerGroup([marker]);
 	
     
