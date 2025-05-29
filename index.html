@@ -81,6 +81,9 @@
 	var people = L.layerGroup([tree, frank, marcus, lillian, sam]);
 	var debug = L.layerGroup([marker]);
 	
+	var mission1 = L.marker([68.264366, 346.816406], ).bindPopup("<b>Presuade The Centaurs<b><br>The Centaurs Seem to have agreed to let the Elven Soldiers have safe passage through their lands, keeping the Kobolds supplied. This must be stopped at all cost.").openPopup();
+
+	var missions = L.LayerGroup([mission1]);
     
 	var states = [{
     "type": "Feature",
@@ -639,6 +642,7 @@
 	var overlayMaps = {
     "Cities": province,
 	"Important People": people,
+	"Available Missions": missions,
 	"Debug Tools": debug
 	//"Empire": empire
 	};
