@@ -77,11 +77,13 @@
 	var marcus = L.marker([-78.518746, 119.53125], ).bindPopup("Marcus").openPopup();
 	var lillian = L.marker([50.948674, 147.480469], ).bindPopup("Lilian").openPopup();
 	var sam = L.marker([-8.404993, 67.675781], ).bindPopup("Sammy Wall").openPopup();
-	var mission1 = L.marker([68.264366, 346.816406], ).bindPopup("<b>Presuade The Centaurs<b><br>The Centaurs Seem to have agreed to let the Elven Soldiers have safe passage through their lands, keeping the Kobolds supplied. This must be stopped at all cost.").openPopup();
+	var mission1 = L.marker([25.482951, 9.84375], ).bindPopup("<b>Steal Blueprints<b><br>Many valuable blueprints and technologies lie in the Gnomish Vaults. Stealing them would gaurentee we can use them to aid our war effort, but would probably drive the Gnomes closer to the elves.").openPopup();
+	var mission2 = L.marker([47.517201, 35.859375], ).bindPopup("<b>Destroy the Bridge<b><br>The Dragonborn army is an ever present risk. Destroying this bridge would delay conflict, and allow our forces to focus on the Kobolds.").openPopup();
+	var mission3 = L.marker([-69.534518, 185.273438], ).bindPopup("<b>Supply Raid<b><br>Compared to the Humans and the Tieflings, the Orcs are much shorter on supplies, and will have much more trouble holding out against the Elves, and could use some help stealing supplies to keep them afloat.").openPopup();
 	var province = L.layerGroup([gnome, tief, h1, h2, h3, h4, h5, e1, e2, e3, e4, t1, t2, t3, gn1, gn2, d1, d2, d3, b1, b2, o1, o2, a1, a2, a3, i1, g1, g2, l1, l2, l3, l4, c1, c2, k1, k2, k3, k4, w1, w2, w3, w4, w5, w6]);
 	var people = L.layerGroup([tree, frank, marcus, lillian, sam]);
 	var debug = L.layerGroup([marker]);
-	var missionlayer = L.layerGroup([mission1]);
+	var missionlayer = L.layerGroup([mission1, mission2, mission3]);
 	
 
 	//var missions = L.LayerGroup([mission1]);
@@ -652,3 +654,4 @@
     </script>
   </body>
 </html>
+
