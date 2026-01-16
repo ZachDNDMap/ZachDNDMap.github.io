@@ -73,15 +73,18 @@
 	var w4 = L.marker([81.569968, -67.851563], ).bindPopup("Westfall").openPopup();
 	var w5 = L.marker([78.098296, 27.070313], ).bindPopup("Stronban's Pass").openPopup();
 	var w6 = L.marker([71.910888, -70.664063], ).bindPopup("Vronomdhold").openPopup();
+	var pass = L.marker([65.576271, -36.035156], ).bindPopup("Sand Dragon Pass").openPopup();
 	var frank = L.marker([54.357884, 275.625], ).bindPopup("Frank").openPopup();
 	var marcus = L.marker([-78.518746, 119.53125], ).bindPopup("Marcus").openPopup();
 	var lillian = L.marker([50.948674, 147.480469], ).bindPopup("Lilian").openPopup();
 	var sam = L.marker([-8.404993, 67.675781], ).bindPopup("Sammy Wall").openPopup();
+	var p1 = L.marker([63.617119, -34.628906], ).bindPopup("Crowley Droton").openPopup();
+	var p2 = L.marker([62.745036, -43.59375], ).bindPopup("Riki S").openPopup();
 	var mission1 = L.marker([25.482951, 9.84375], ).bindPopup("<b>Steal Blueprints<b><br>Many valuable blueprints and technologies lie in the Gnomish Vaults. Stealing them would gaurentee we can use them to aid our war effort, but would probably drive the Gnomes closer to the elves.").openPopup();
 	var mission2 = L.marker([47.517201, 35.859375], ).bindPopup("<b>Destroy the Bridge<b><br>The Dragonborn army is an ever present risk. Destroying this bridge would delay conflict, and allow our forces to focus on the Kobolds.").openPopup();
 	var mission3 = L.marker([-69.534518, 185.273438], ).bindPopup("<b>Supply Raid<b><br>Compared to the Humans and the Tieflings, the Orcs are much shorter on supplies, and will have much more trouble holding out against the Elves, and could use some help stealing supplies to keep them afloat.").openPopup();
-	var province = L.layerGroup([gnome, tief, h1, h2, h3, h4, h5, e1, e2, e3, e4, t1, t2, t3, gn1, gn2, d1, d2, d3, b1, b2, o1, o2, a1, a2, a3, i1, g1, g2, l1, l2, l3, l4, c1, c2, k1, k2, k3, k4, w1, w2, w3, w4, w5, w6]);
-	var people = L.layerGroup([tree, frank, marcus, lillian, sam]);
+	var province = L.layerGroup([gnome, tief, h1, h2, h3, h4, h5, e1, e2, e3, e4, t1, t2, t3, gn1, gn2, d1, d2, d3, b1, b2, o1, o2, a1, a2, a3, i1, g1, g2, l1, l2, l3, l4, c1, c2, k1, k2, k3, k4, w1, w2, w3, w4, w5, w6, pass]);
+	var people = L.layerGroup([tree, frank, marcus, lillian, sam, p1, p2]);
 	var debug = L.layerGroup([marker]);
 	var missionlayer = L.layerGroup([mission1, mission2, mission3]);
 	
@@ -654,4 +657,5 @@
     </script>
   </body>
 </html>
+
 
