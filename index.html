@@ -114,7 +114,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Loyal", "name": "Kobolds", "influence": "Elves: 85%, Resistance: 15%"},
+    "properties": {"party": "Occupied", "name": "Kobolds", "influence": "Under Human Occupation"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -323,7 +323,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Neutral", "name": "Gnomes", "influence": "Elves: 55%, Resistance: 45%"},
+    "properties": {"party": "Loyal", "name": "Gnomes", "influence": "Elves: 85%, Resistance: 15%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -400,7 +400,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Neutral", "name": "Centaurs", "influence": "Elves: 59%, Resistance: 41%"},
+    "properties": {"party": "Disloyal", "name": "Centaurs", "influence": "Elves: 20%, Resistance: 80%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -482,7 +482,7 @@
     }
 	}, {
     "type": "Feature",
-    "properties": {"party": "Neutral", "name": "Kindom of Dwarves", "influence": "Elves: 0%, Resistance: 30%"},
+    "properties": {"party": "Neutral", "name": "Kindom of Dwarves", "influence": "Elves: 0%, Resistance: 60%"},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -633,6 +633,7 @@
 			case 'Neutral': return {color: "#FDDA0D"};
             case 'Disloyal':   return {color: "#0000ff"};
 			case 'Other':   return {color: "#096600"};
+			case 'Occupied': return {color: "#CC0066"};
         }
 		}	
 	, onEachFeature: function (feature, layer) {
